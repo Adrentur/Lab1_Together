@@ -28,7 +28,7 @@ int main()
     std::cout << std::fixed << std::setprecision(6);
 
     // Измененная строчка для Студента Б
-    std::cout << "=== Lab 1: Numerical Analysis (Updated by Student B) ===\n";
+    std::cout << "=== CONFLICT TEST BY STUDENT B ===\n";
     std::cout << "x = [";
     for (size_t i = 0; i < valueA.size(); ++i)
         std::cout << valueA[i] << (i + 1 < valueA.size() ? ", " : "");
