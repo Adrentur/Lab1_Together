@@ -8,10 +8,6 @@ std::unique_ptr<Result> calculateB(std::shared_ptr<const InputData> data);
 
 int main()
 {
-    // Приклад системи (діагонально переважна - потрібно для збіжності методу Б)
-    // 4x + y + z = 6
-    //  x + 5y + z = 7
-    //  x + y + 6z = 8
     auto data = std::make_shared<const InputData>(InputData{
         .A = {
             {4.0, 1.0, 1.0},
@@ -31,7 +27,8 @@ int main()
 
     std::cout << std::fixed << std::setprecision(6);
 
-    std::cout << "=== Student A (Gauss elimination) ===\n";
+    // ИЗМЕНЕНИЕ СТУДЕНТА А
+    std::cout << "=== Lab 1: Gauss & Jacobi (Author: Student A) ===\n";
     std::cout << "x = [";
     for (size_t i = 0; i < valueA.size(); ++i)
         std::cout << valueA[i] << (i + 1 < valueA.size() ? ", " : "");
