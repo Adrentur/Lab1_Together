@@ -28,7 +28,7 @@ int main()
     std::cout << std::fixed << std::setprecision(6);
 
     // ИЗМЕНЕНИЕ СТУДЕНТА А
-    std::cout << "=== Lab 1: Gauss & Jacobi (Author: Student A) ===\n";
+    === MAIN VERSION ===
     std::cout << "x = [";
     for (size_t i = 0; i < valueA.size(); ++i)
         std::cout << valueA[i] << (i + 1 < valueA.size() ? ", " : "");
